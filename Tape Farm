@@ -1,0 +1,16 @@
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Thanks for using Tape Auto Farm";
+Text = "Credits: (Script) BlackBall2007 (Notification) GoldGowd.";
+Duration = 5;
+})
+
+local Player = game.Players.LocalPlayer
+local char = Player.Character.HumanoidRootPart
+while wait(3) do
+if game.Workspace:WaitForChild("Tape") then
+   game.Workspace.Tape.CFrame = char.CFrame
+   else
+       print("Couldn't find Tape")
+end
+end
